@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <style>
+    .attribution { 
+      font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    body {
+      font-family: Poppins;
+      color: hsl(234, 12%, 34%);
+      width: 100%;
+      margin: 0px;
+      min-height: 100vh;
+      padding: 20px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: hsl(0, 0%, 98%);
+    }
+    header {
+      align-self: center;
+      text-align: center;
+      width: 380px;
+    }
+    h1 {
+      font-weight: 200;
+      font-size: 1.6em;
+      margin: 0;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 1.6em;
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+      font-size: 0.9em;
+    }
+    p {
+      font-weight: 400;
+      font-size: 0.7em;
+    }
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .col{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width: 750px) {
+      .col {width: 100%;}
+    }
+    .card {
+      width: 11em;
+      height: 6em;
+      margin:1em 1em;
+      border: 0px;
+      border-radius: 3px;
+      box-shadow: 0px 5px 20px hsla(229, 6%, 66%, 0.628);
+      padding: 1.2em;
+    }
+    .card1 {
+      border-top: 2px hsl(180, 62%, 55%) solid;
+    }
+    .card2 {
+      border-top: 2px hsl(0, 78%, 62%) solid;
+    }
+    .card3 {
+      border-top: 2px hsl(34, 97%, 64%) solid;
+    }
+    .card4 {
+      border-top: 2px hsl(212, 86%, 64%) solid;
+    }
+    .card_text {
+      font-size: .5em;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      height: 2.5em;
+    }
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Reliable, efficient delivery</h1>
+    <h2>Powered by Technology</h2>
+  
+    <p>Our Artificial Intelligence powered tools use millions of project data points
+    to ensure that your project is successful</p>
+  </header>
+  <main role="main">
+    <div class="flex-container">
+      <div class="col col1">
+        <div class="card card1">
+          <h3>Supervisor</h3>
+          <p class="card_text">Monitors activity to identify project roadblocks</p>
+          <img alt="magnifying glass with eye" src="./images/icon-supervisor.svg"></img>
+        </div>
+      </div>
+      <div class="col col2">
+        <div class="card card2">
+          <h3>Team Builder</h3>
+          <p class="card_text">Scans our talent network to create the optimal team for your project</p>
+          <img alt="browser window with house icon" src="./images/icon-team-builder.svg"></img>
+        </div>
+        <div class="card card3">
+          <h3>Karma</h3>
+          <p class="card_text">Regularly evaluates our talent to ensure quality</p>
+          <img alt="light bulb" src="./images/icon-karma.svg"></img>
+          
+        </div>
+      </div>
+      <div class="col col3">
+        <div class="card card4">
+          <h3>Calculator</h3>
+          <p class="card_text">Uses data from past projects to provide better delivery estimates</p>
+          <img alt="monitor showing data" src="./images/icon-calculator.svg"></img>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+  
+  
+ 
+
+  
+
+  
+
+  
+  
+  <footer role="contentinfo">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">William Anderson</a>.
+    </p>
+  </footer>
+</body>
+</html>
